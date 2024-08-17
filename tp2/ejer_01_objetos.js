@@ -32,16 +32,11 @@ console.log(estudiante.direccion)
 // una cadena describiendo el título y el autor del libro. Invoca este
 // método e imprime el resultado.
 
-const libro2 = {
-    titulo : 'la odisea',
-    autor : 'homero',
-    anopublicacion : '762 a.c',
-    descripcion (){
-        return (`El libro "${this.titulo}" fue escrito por "${this.autor}" `)
-    }
-}
+libro.descripcion = function(){
+    return (`El libro "${this.titulo}" fue escrito por "${this.autor}" `)
+} 
 
-console.log(libro2.descripcion())
+console.log(libro.descripcion())
 
 // 4. Iteración sobre Propiedades de un Objeto:
 // ○ Crea un objeto producto con propiedades como nombre, precio y
