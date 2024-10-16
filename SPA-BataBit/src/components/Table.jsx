@@ -1,4 +1,4 @@
-//51BE0883-2A87-434D-B9C3-FD0862FAED57
+
 import React, { useEffect, useState } from 'react';
 
 const Table = () => {
@@ -11,7 +11,7 @@ const Table = () => {
   const [lastUpdated, setLastUpdated] = useState('');
 
   useEffect(() => {
-    const apiKey = '51BE0883-2A87-434D-B9C3-FD0862FAED57'; 
+    const apiKey = 'API_KEY'; 
     const url = 'https://rest.coinapi.io/v1/assets';
 
     const fetchData = async () => {
